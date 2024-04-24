@@ -1,5 +1,7 @@
 # randn.cr
 
+:construction: **Work in progress**
+
 ## Installation
 
 1. Add the dependency to your `shard.yml`:
