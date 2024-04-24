@@ -1,6 +1,4 @@
-# randn
-
-TODO: Write a description here
+# randn.cr
 
 ## Installation
 
@@ -9,7 +7,7 @@ TODO: Write a description here
    ```yaml
    dependencies:
      randn:
-       github: your-github-user/randn
+       github: kojix2/randn.cr
    ```
 
 2. Run `shards install`
@@ -20,20 +18,12 @@ TODO: Write a description here
 require "randn"
 ```
 
-TODO: Write usage instructions here
-
 ## Development
-
-TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/randn/fork>)
+1. Fork it (<https://github.com/kojix2/randn/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
-## Contributors
-
-- [kojix2](https://github.com/your-github-user) - creator and maintainer
