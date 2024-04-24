@@ -1,5 +1,7 @@
 # randn.cr
 
+[![test](https://github.com/kojix2/randn.cr/actions/workflows/ci.yml/badge.svg)](https://github.com/kojix2/randn.cr/actions/workflows/ci.yml)
+
 :construction: **Work in progress**
 
 ## Installation
