@@ -1,2 +1,2 @@
 require "spec"
-require "../src/rand"
+require "../src/randn"
