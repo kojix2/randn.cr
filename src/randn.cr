@@ -17,6 +17,8 @@ class Rand
     @gset = 0.to_f64
   end
 
+  forward_missing_to @random
+
   # Generates a random number from a standard normal distribution.
   def randn : Float64
     if @iset == 0
@@ -44,19 +46,5 @@ class Rand
     std_dev = std_dev.to_f
     raise "std_dev must be positive" if std_dev.negative?
     mean + std_dev * randn()
-  end
-
-  # These methods are start with an underscore to avoid conflicts with the built-in rand methods.
-
-  def _rand : Float64
-    @random.next_float
-  end
-
-  def _rand(n : Int32) : Int32
-    (@random.next_float * n).to_i
-  end
-
-  def rand_bool : Bool
-    @random.next_bool
   end
 end
