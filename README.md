@@ -2,8 +2,6 @@
 
 [![test](https://github.com/kojix2/randn.cr/actions/workflows/ci.yml/badge.svg)](https://github.com/kojix2/randn.cr/actions/workflows/ci.yml)
 
-:construction: **Work in progress**
-
 ## Installation
 
 1. Add the dependency to your `shard.yml`:
@@ -20,6 +18,22 @@
 
 ```crystal
 require "randn"
+
+r = Rand.new
+
+# Generate a random number from a normal distribution
+# with mean 0 and standard deviation 1
+r.randn
+# => 0.6308041689636543
+
+# Generate a random number from a normal distribution
+# with mean 10 and standard deviation 2
+r.randn(10, 2)
+# => 11.812242402689735
+
+# missing methods are delegated to `Random` object in the Rand instance 
+r.next_bool
+# => true
 ```
 
 ## Development
