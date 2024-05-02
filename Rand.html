@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.11.2">
+<meta name="crystal_docs.project_version" content="main">
+<meta name="crystal_docs.project_name" content="randn">
+
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/doc.js"></script>
+
+  <meta name="repository-name" content="randn">
+  <title>Rand - randn main</title>
+  <script type="text/javascript">
+    CrystalDocs.base_path = "";
+  </script>
+</head>
+<body>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="project-summary">
+      <h1 class="project-name">
+        <a href="index.html">
+          randn
+        </a>
+      </h1>
+
+      <span class="project-version">
+        main
+      </span>
+    </div>
+  </div>
+
+  <div class="search-results hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class=" current" data-id="randn/Rand" data-name="rand">
+      <a href="Rand.html">Rand</a>
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Rand
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="Rand.html">Rand</a></li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/kojix2/randn.cr/blob/857417e4ae2eba6a935740ed96bfd693b54f8a51/src/randn.cr#L9" target="_blank">
+        randn.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+  <h2>
+    <a id="constructors" class="anchor" href="#constructors">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructors
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#new%28seed%3AUInt64%2Csequence%3D0_u64%29-class-method" class="signature"><strong>.new</strong>(seed : UInt64, sequence = <span class="n">0_u64</span>)</a>
+        
+          <div class="summary"><p>Initializes an instance with the given <em>seed</em> and <em>sequence</em>.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new%28random%3ARandom%29-class-method" class="signature"><strong>.new</strong>(random : Random)</a>
+        
+          <div class="summary"><p>Initializes an instance with the given <em>random</em> object.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#new-class-method" class="signature"><strong>.new</strong></a>
+        
+          <div class="summary"><p>Initializes an instance with a random seed.</p></div>
+        
+      </li>
+    
+  </ul>
+
+
+
+
+
+  <h2>
+    <a id="macro-summary" class="anchor" href="#macro-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Macro Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#method_missing%28call%29-macro" class="signature"><strong>method_missing</strong>(call)</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+  <h2>
+    <a id="instance-method-summary" class="anchor" href="#instance-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#randn%28mean%2Cstd_dev%29%3AFloat64-instance-method" class="signature"><strong>#randn</strong>(mean, std_dev) : Float64</a>
+        
+          <div class="summary"><p>Generates a random number from a normal distribution.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#randn%3AFloat64-instance-method" class="signature"><strong>#randn</strong> : Float64</a>
+        
+          <div class="summary"><p>Generates a random number from a standard normal distribution.</p></div>
+        
+      </li>
+    
+      <li class="entry-summary">
+        <a href="#random%3ARandom-instance-method" class="signature"><strong>#random</strong> : Random</a>
+        
+      </li>
+    
+  </ul>
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+  <h2>
+    <a id="constructor-detail" class="anchor" href="#constructor-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Constructor Detail
+  </h2>
+  
+    <div class="entry-detail" id="new(seed:UInt64,sequence=0_u64)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(seed : UInt64, sequence = <span class="n">0_u64</span>)
+
+        <a class="method-permalink" href="#new%28seed%3AUInt64%2Csequence%3D0_u64%29-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Initializes an instance with the given <em>seed</em> and <em>sequence</em>.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/randn.cr/blob/857417e4ae2eba6a935740ed96bfd693b54f8a51/src/randn.cr#L19" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new(random:Random)-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>(random : Random)
+
+        <a class="method-permalink" href="#new%28random%3ARandom%29-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Initializes an instance with the given <em>random</em> object.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/randn.cr/blob/857417e4ae2eba6a935740ed96bfd693b54f8a51/src/randn.cr#L25" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="new-class-method">
+      <div class="signature">
+        
+        def self.<strong>new</strong>
+
+        <a class="method-permalink" href="#new-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Initializes an instance with a random seed.</p>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/randn.cr/blob/857417e4ae2eba6a935740ed96bfd693b54f8a51/src/randn.cr#L13" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+
+
+  <h2>
+    <a id="macro-detail" class="anchor" href="#macro-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Macro Detail
+  </h2>
+  
+    <div class="entry-detail" id="method_missing(call)-macro">
+      <div class="signature">
+        
+        macro <strong>method_missing</strong>(call)
+
+        <a class="method-permalink" href="#method_missing%28call%29-macro">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/randn.cr/blob/857417e4ae2eba6a935740ed96bfd693b54f8a51/src/randn.cr#L31" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+
+  <h2>
+    <a id="instance-method-detail" class="anchor" href="#instance-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Instance Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="randn(mean,std_dev):Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>randn</strong>(mean, std_dev) : Float64
+
+        <a class="method-permalink" href="#randn%28mean%2Cstd_dev%29%3AFloat64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Generates a random number from a normal distribution.</p>
+<p>This method generates a random number from a normal distribution with a
+given <em>mean</em> and standard deviation <em>std_dev</em>.</p>
+<pre><code class="language-crystal">r <span class="o">=</span> <span class="t">Rand</span>.new
+r.randn(<span class="n">0</span>, <span class="n">1</span>) <span class="c"># =&gt; 0.1.9288478880269821</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/randn.cr/blob/857417e4ae2eba6a935740ed96bfd693b54f8a51/src/randn.cr#L72" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="randn:Float64-instance-method">
+      <div class="signature">
+        
+        def <strong>randn</strong> : Float64
+
+        <a class="method-permalink" href="#randn%3AFloat64-instance-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Generates a random number from a standard normal distribution.</p>
+<p>This method uses the Box-Muller transform to generate a random number
+from a standard normal distribution. The generated number will have a
+mean of 0 and a standard deviation of 1.</p>
+<pre><code class="language-crystal">r <span class="o">=</span> <span class="t">Rand</span>.new
+r.randn <span class="c"># =&gt; 0.1.9288478880269821</span></code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/randn.cr/blob/857417e4ae2eba6a935740ed96bfd693b54f8a51/src/randn.cr#L43" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="random:Random-instance-method">
+      <div class="signature">
+        
+        def <strong>random</strong> : Random
+
+        <a class="method-permalink" href="#random%3ARandom-instance-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/kojix2/randn.cr/blob/857417e4ae2eba6a935740ed96bfd693b54f8a51/src/randn.cr#L10" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+
+
+</div>
+
+</body>
+</html>
