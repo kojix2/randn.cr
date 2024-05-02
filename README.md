@@ -38,6 +38,12 @@ r.next_bool
 
 ## Development
 
+- Fork this repository
+- Report bugs
+- Fix bugs and submit pull requests
+- Write, clarify, or fix documentation
+- Suggest or add new features
+
 ## Contributing
 
 1. Fork it (<https://github.com/kojix2/randn/fork>)
@@ -45,3 +51,7 @@ r.next_bool
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+## License
+
+MIT License
