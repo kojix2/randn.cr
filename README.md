@@ -1,6 +1,7 @@
 # randn.cr
 
 [![test](https://github.com/kojix2/randn.cr/actions/workflows/ci.yml/badge.svg)](https://github.com/kojix2/randn.cr/actions/workflows/ci.yml)
+[![Docs Latest](https://img.shields.io/badge/docs-latest-blue.svg)](https://kojix2.github.io/randn.cr/)
 
 ## Installation
 
